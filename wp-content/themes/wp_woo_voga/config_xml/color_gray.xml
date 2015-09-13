@@ -138,7 +138,10 @@
 								.nav > .main-menu > ul.menu > li.wd-mega-menu > ul.sub-menu li.widget_nav_menu li:hover > a,
 								.nav > .main-menu > ul.menu > li ul.sub-menu .list-menu li:hover > a,
 								/* Label hot product */
-								.wd_cart_buttons a.button.wd_update_button_visible
+								.wd_cart_buttons a.button.wd_update_button_visible,
+								.wd_milestone .fa,
+								.wd_video .bg_overlay .cover_button:hover:before,
+								.cus_contact_form .wpcf7-form input.wpcf7-submit:hover
 							</selector_normal>
 							<selector_important>
 								div.pp_woocommerce .pp_close:hover,
@@ -239,7 +242,8 @@
 								.product-meta-wrapper .wd_quickshop_handler:after,
 								.product-meta-wrapper .wd_compare_wrapper:after,
 								/* Label hot product */
-								.wd_cart_buttons a.button.wd_update_button_visible
+								.wd_cart_buttons a.button.wd_update_button_visible,
+								.cus_contact_form .wpcf7-form input.wpcf7-submit
 							</selector_normal>
 							<selector_important>
 								/* Easy cart */
@@ -260,6 +264,7 @@
 								/* Header top background */
 								#header .header-top,
 								#header .header_search form input[type="text"],
+								.is-sticky #header.header-v2 .header-top,
 								/* Button secondary background */
 								.woocommerce-cart .cart_totals .wc-proceed-to-checkout .button,
 								.woocommerce .cart_totals .wc-proceed-to-checkout .button,
@@ -267,6 +272,8 @@
 								.buttons a.big,
 								.btn.big,
 								.button.big,
+								.woocommerce .variations_button button.button,
+								.woocommerce-page .variations_button button.button,
 								.woocommerce #content input.button.big, 
 								.woocommerce #respond input#submit.big,
 								.pp_woocommerce a.button.big, 
@@ -305,7 +312,13 @@
 								.wd_cart_buttons a.button.wd_update_button_visible:hover,
 								/* Thumbnail background color hover */
 								.product-thumbnail-wrapper:after,
-								.item-portfolio .thumb-image-hover
+								.item-portfolio .thumb-image-hover,
+								.vc_wp_categories .widget_categories > ul > li:before,
+								.vc_wp_meta .widget_meta > ul > li:before,
+								.vc_wp_recentcomments .widget_recent_comments ul li:before,
+								.vc_wp_pages .widget_pages > ul > li:before,
+								.shortcode-recent-blogs .date-time,
+								.cus_contact_form .wpcf7-form input.wpcf7-submit
 							</selector_normal>
 							<selector_important>
 								body .ec_product_quickview_content_add_to_cart a,
@@ -896,7 +909,11 @@
 						<selector>
 							h1,h3,h4,h5,h6,
 							.h1,.h3,.h4,.h5,.h6,
+							.heading_color,
+							a.heading_color,
 							body .ec_cart_page .ec_cart_success_title,
+							.wd_milestone .number,
+							.wd_milestone .subject,
 							.price_in_table > .period,
 							.price_in_table > .pricing,
 							.price_table_inner li.content ol li:after,
@@ -908,7 +925,26 @@
 							.sidebar-content .nav-tabs > li a,
 							.widget_social ul li a,
 							.group_table td.label a,
-							body .vc_tta-color-grey.vc_tta-style-classic .vc_tta-panel.vc_active .vc_tta-panel-title > a
+							body .vc_tta-color-grey.vc_tta-style-classic .vc_tta-panel.vc_active .vc_tta-panel-title > a,
+							.wpb_content_element .widgettitle,
+							.vc_wp_categories ul li,
+							.vc_wp_categories ul li a,
+							.vc_wp_meta ul li,
+							.vc_wp_meta ul li a,
+							.vc_wp_recentcomments .widget_recent_comments ul li a,
+							.vc_wp_pages .widget_pages ul li a
+						</selector>
+					</f1>
+					<f1>
+						<attribute>background-color</attribute>
+						<selector>
+							.wd_milestone .subject:before
+						</selector>
+					</f1>
+					<f1>
+						<attribute>border-color</attribute>
+						<selector>
+							html .vc_tta.vc_tta-accordion.vc_general .vc_tta-panel-body
 						</selector>
 					</f1>
 				</frontend>
@@ -933,7 +969,10 @@
 				<frontend>
 					<f1>
 						<attribute>color</attribute>
-						<selector>a,.vc_tta.vc_general .vc_tta-tabs-list .vc_tta-tab a</selector>
+						<selector>
+							a,.vc_tta.vc_general .vc_tta-tabs-list .vc_tta-tab a,.vc_wp_categories ul li:hover a,.vc_wp_meta ul li:hover > a,.vc_wp_recentcomments .widget_recent_comments ul li a:hover,
+							.vc_wp_pages .widget_pages ul li:hover > a
+						</selector>
 					</f1>
 				</frontend>
 			</item>	
@@ -1044,7 +1083,9 @@
 								body .ec_details_categories,
 								body .ec_details_customer_reviews_form > .ec_details_customer_reviews_form_holder,
 								body .ec_cart_widget_minicart_wrap,
-								body .ec_cart_widget_minicart_product_holder
+								body .ec_cart_widget_minicart_product_holder,
+								.vc_tta.vc_tta-accordion.vc_general .vc_tta-panel-body,
+								.vc_tta.vc_tta-accordion.vc_general .vc_active .vc_tta-panel-heading:hover a
 							</selector_normal>
 							<selector_important>
 								#content .quantity .plus, 
@@ -1074,7 +1115,9 @@
 						<attribute>color</attribute>
 						<selector>
 							body .ec_product_details_star_off,
-							body .ec_product_star_off
+							body .ec_product_star_off,
+							.vc_tta.vc_tta-accordion.vc_general .vc_tta-panel-title,
+							html .vc_tta.vc_tta-accordion.vc_general .vc_active .vc_tta-panel-title a
 						</selector>
 					</f1>
 					<f1>
@@ -1223,7 +1266,9 @@
 						<attribute>background-color</attribute>
 						<selector>
 								#header .header-top,
-								#header .header_search form input[type="text"]
+								#header .header_search form input[type="text"],
+								.is-sticky #header.header-v2 .header-top,
+								#header.header-v2 .header-top:after
 						</selector>
 					</f1>
 				</frontend>
@@ -1268,6 +1313,19 @@
 						<attribute>background-color</attribute>
 						<selector>
 								.header_woo_content
+						</selector>
+					</f1>
+				</frontend>
+			</item>
+			<item>
+				<name>Header Cart Border Color</name>
+				<slug>header_cart_border_color</slug>
+				<std>#d5d5d5</std>
+				<frontend>
+					<f1>
+						<attribute>border-color</attribute>
+						<selector>
+								#header .header_woo_content
 						</selector>
 					</f1>
 				</frontend>
@@ -1843,6 +1901,8 @@
 								.buttons a.big:hover,
 								.button.big:hover,
 								.btn.big:hover,
+								.woocommerce .variations_button button.button:hover,
+								.woocommerce-page .variations_button button.button:hover,
 								.woocommerce #respond input#submit.alt.big.disabled,
 								.woocommerce #respond input#submit.alt.big.disabled:hover,
 								.woocommerce #respond input#submit.alt.big:disabled,
@@ -2012,6 +2072,8 @@
 								.buttons a.big:hover,
 								.button.big:hover,
 								.btn.big:hover,
+								.woocommerce .variations_button button.button:hover,
+								.woocommerce-page .variations_button button.button:hover,	
 								.woocommerce #respond input#submit.alt.big.disabled,
 								.woocommerce #respond input#submit.alt.big.disabled:hover,
 								.woocommerce #respond input#submit.alt.big:disabled,
@@ -2207,6 +2269,8 @@
 								.buttons a.big,
 								.btn.big,
 								.button.big,
+								.woocommerce .variations_button button.button,
+								.woocommerce-page .variations_button button.button,
 								.woocommerce #content input.button.big, 
 								.woocommerce #respond input#submit.big,
 								.pp_woocommerce a.button.big, 
@@ -2268,6 +2332,8 @@
 								.buttons a.big,
 								.btn.big,
 								.button.big,
+								.woocommerce .variations_button button.button,
+								.woocommerce-page .variations_button button.button,
 								.woocommerce #content input.button.big, 
 								.woocommerce #respond input#submit.big,
 								.pp_woocommerce a.button.big, 

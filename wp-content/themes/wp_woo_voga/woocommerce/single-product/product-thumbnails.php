@@ -92,8 +92,9 @@ if ( $attachment_ids ) {
 					}
 				};
 				
-				jQuery('.product_thumbnails').carouFredSel(_slider_datas);
-				
+				jQuery(window).load(function(){
+					jQuery('.product_thumbnails').carouFredSel(_slider_datas);
+				});
 			});
 			
 			

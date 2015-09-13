@@ -40,7 +40,9 @@
 /* ------------------------------------------------------------- */
 
 ul.page_config_list li label {vertical-align:top;min-width:190px;display:inline-block;}
-ul.page_config_list li select{min-width: 220px;}
+ul.page_config_list li select, ul.page_config_list li input[type="text"]{min-width: 220px;}
+ul.page_config_list li input.upload_field{width: 300px;}
+ul.page_config_list li img.preview_image{display: block; margin-left: 192px;margin-top: 5px;max-width:150px;}
 
 /* ------------------------------------------------------------- */
 /*                       POST CONFIG                             */
@@ -85,3 +87,10 @@ select .fa-lg,select .fa-1x,select .fa-2x,select .fa-3x,select .fa-4x,select .fa
 	background:url(../images/wpdance.png) center no-repeat !important;
 	width:17px;height:17px;display:inline-block;
 }
+
+/* ------------------------------------------------------------- */
+/*               RESET SELECT BOX FONTAWESOME                    */
+/* ------------------------------------------------------------- */
+
+select.icon_style,
+select option.icon-no-border,select option.icon-square-border,select option.icon-circle-border {font-family:"Open Sans",sans-serif!important;font-size:13px;}   

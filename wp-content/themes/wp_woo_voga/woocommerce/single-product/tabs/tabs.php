@@ -2,12 +2,14 @@
 /**
  * Single Product tabs
  *
- * @author 		WooThemes
- * @package 	WooCommerce/Templates
- * @version     2.0.0
+ * @author  WooThemes
+ * @package WooCommerce/Templates
+ * @version 2.4.0
  */
 
-if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
+}
 
 /**
  * Filter tabs and allow third parties to add their own
@@ -20,8 +22,8 @@ global $wd_data;
 
 if ( ! empty( $tabs ) ) : ?>
 
-	<div class="woocommerce-tabs tabbable tabs-default" id="multitabs-detail">
-		<ul class="nav nav-tabs">
+	<div class="woocommerce-tabs wc-tabs-wrapper tabbable tabs-default" id="multitabs-detail">
+		<ul class="nav nav-tabs wc-tabs">
 			<?php
 				$active = ' active';
 				$last_arr ='';
@@ -40,7 +42,7 @@ if ( ! empty( $tabs ) ) : ?>
 			$active_in = 'active in';
 			foreach ( $tabs as $key => $tab ) : 
 		?>
-			<div class="tab-pane fade <?php echo $active_in; ?>" id="tab-<?php echo $key ?>">
+			<div class="panel entry-content wc-tab tab-pane <?php echo $active_in; ?>" id="tab-<?php echo $key ?>">
 				<?php call_user_func( $tab['callback'], $key, $tab ) ?>
 			</div>	
 		<?php $active_in = ''; ?>

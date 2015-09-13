@@ -50,15 +50,34 @@ jQuery(document).ready(function(){
             }
         });
     }
-	/*
-	if(jQuery("select#page_type").length > 0 ){
-        jQuery( "select#page_type" ).on( "change", function() {
-            if( jQuery.trim(jQuery( this ).find('option:selected').val()) == 1){
-                jQuery("ul.page_config_list li").not('.wd_slider_config').hide();
-            } else {	
-				jQuery("ul.page_config_list li").show();
+	
+	/* Upload Logo */
+	jQuery('.page_config_list .upload_button').bind('click',function() {
+		var button = jQuery(this);
+		var clear_button = jQuery(this).siblings('.clear_button');
+		var input_field = jQuery(this).siblings('input.upload_field');   
+		wp.media.editor.send.attachment = function(props, attachment){
+			var attachment_url = '';
+			attachment_url = attachment.sizes[props.size].url;
+			input_field.val(attachment_url);
+			if( input_field.siblings('.preview_image').length > 0 ){
+				input_field.siblings('.preview_image').attr('src', attachment_url);
 			}
-        });
-    }
-	*/
+			else{
+				var img_html = '<img class="preview_image" src="' + attachment_url + '" />';
+				input_field.parent().append(img_html);
+			}
+			clear_button.attr('disabled', false);
+		}
+		wp.media.editor.open(button);
+	});
+	
+	jQuery('.page_config_list .clear_button').bind('click', function(){
+		var button = jQuery(this);
+		button.attr('disabled', true);
+		button.siblings('input.upload_field').val('');
+		button.siblings('.preview_image').fadeOut(300, function(){
+			button.siblings('.preview_image').remove();
+		});
+	});
 });

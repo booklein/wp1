@@ -29,6 +29,10 @@
 				$accountpageid = icl_object_id( $accountpageid, 'page', true, ICL_LANGUAGE_CODE );
 			}
 			
+			if( empty($storepageid) || empty($cartpageid) || empty($accountpageid) ){
+				return false;
+			}
+			
 			if( is_page($storepageid) || is_page($cartpageid) || is_page($accountpageid) || (isset($_GET['header']) && $_GET['header']=='ec' ) ){
 				return true;
 			}

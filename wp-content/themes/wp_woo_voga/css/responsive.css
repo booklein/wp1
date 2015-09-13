@@ -783,6 +783,7 @@ only screen and (max-width: 989px)	{
 @media 
 only screen and (max-width: 767px)	{
 	/* RESET */
+	.vc_row.row,
 	.row{
 		margin-left:0;
 		margin-right:0;
@@ -2629,5 +2630,127 @@ only screen and (max-width: 600px)	and (min-width: 420px){
 			flex: none;
 		}
 		/* END FIX ORDER DISPLAY FLEX */
+	}
+}
+
+/* ----------------------------------------------------------------------------
+   =  HOME STORE CREATIVE ----------------------------------------------------- */
+@media 
+only screen and (max-width-device-width: 767px),
+only screen and (max-width: 767px) {
+	html .cus_padding_res {
+		padding-left:0!important;
+		padding-right:0!important;
+	}
+	html .vc_row .vc_row .cus_padding_res {
+		padding-left:20px!important;
+		padding-right:20px!important;
+	}
+	#header.header-v2 .header-top {
+		position:relative;
+		left:auto;
+		top:auto;
+		right:auto;
+	}
+	#header.header-v2 .header-top:after {
+		display:block;
+	}
+	#header.header-v2 .header-top .logo {
+		display:none;
+	}
+	#header.header-v2 .header_search > form {
+		height:50px;
+	}
+	#header.header-v2 .header_search > form > div:before {
+		display:block;
+	}
+	#header.header-v2 .header_search > form > div .search-input {
+		position:relative;
+		top:auto;
+		right:auto;
+		border:0!important;
+	}
+	#header.header-v2 .header-middle-content .logo{
+		float:none;
+		margin:10px 0 30px;
+	}
+	#header.header-v2 .header_woo_content {
+		clear:both;
+		text-align:center;
+	}
+	#header.header-v2 .header_woo_content .visible-xs{
+		float:none;
+	}
+}
+
+/* ----------------------------------------------------------------------------
+   =  HOME STORE COOPERATION -------------------------------------------------- */
+   
+@media 
+only screen and (max-width-device-width: 767px),
+only screen and (max-width: 767px) {  
+	#header.header-v3 .header-top .logo {
+		display:none;
+	}
+	#header.header-v3 .header_search {
+		height:50px;
+	}
+	#header.header-v3 .header_search > form > div:after {
+		height:19px;
+		line-height:19px;
+	}
+	#header.header-v3 .header_search form input[type="text"] {
+		padding-top:13px;
+		padding-bottom:13px;
+	}
+	#header.header-v3 .header_search form input[type="submit"] {
+		height:50px;
+	}
+	#header.header-v3 .header-middle .header-middle-content {
+		padding-top:0;
+	}
+	#header.header-v3 .header-middle-content .logo{
+		float:none;
+		margin:30px 0 30px;
+	}
+	#header.header-v3 .header_woo_content {
+		clear:both;
+		text-align:center;
+	}
+	#header.header-v3 .header_woo_content .visible-xs{
+		float:none;
+	}
+	.cus_border_brand_cooperate .wpb_column,
+	.cus_border_brand_cooperate.wpb_row{
+		border-width:0!important;
+	}
+	.cus_padding_price_table .row-boxed {
+		padding-left:0!important;
+		padding-right:0!important;
+	}
+}
+
+/* ----------------------------------------------------------------------------
+   =  HOME STORE TECHNOLOGY --------------------------------------------------- */
+
+@media 
+only screen and (max-width-device-width: 1023px) and (min-width-device-width: 767px),
+only screen and (max-width: 1023px) and (min-width: 768px) { 
+	.cus_contact_form .wpcf7-form .wpcf7-not-valid-tip {
+		left:0;
+	}
+}   
+@media 
+only screen and (max-width-device-width: 767px),
+only screen and (max-width: 767px) { 
+	html .cus_contact_form .wpcf7-form .name,html .cus_contact_form .wpcf7-form .email {
+		width:100%;float:none;
+		padding:0;
+	}
+	.cus_contact_form .wpcf7-form .name:before {
+		right:0;
+	}
+	.cus_contact_form .wpcf7-form .email:before {
+		left:0;
 	}
 }

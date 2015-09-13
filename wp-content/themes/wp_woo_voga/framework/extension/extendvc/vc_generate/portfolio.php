@@ -100,6 +100,27 @@ if( class_exists('WD_Portfolio') ){
 				"value" => '-1',
 				"description" => ""
 			),
+			array(
+				"type" => "dropdown",
+				"class" => "",
+				"heading" => __("Show Pagination", "wpdance"),
+				"admin_label" => true,
+				"param_name" => "show_pagination",
+				"value" => array(
+						'Yes' => 'yes',
+						'No' => 'no'
+					),
+				"description" => ""
+			),
+			array(
+				"type" => "textarea",
+				"class" => "",
+				"heading" => __("Category IDs", "wpdance"),
+				"admin_label" => true,
+				"param_name" => "category",
+				"value" => '',
+				"description" => "",
+			)
 		)
 	);
 	vc_map( $portfolio_params );

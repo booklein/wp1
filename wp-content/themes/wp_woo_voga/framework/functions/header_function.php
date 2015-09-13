@@ -3,9 +3,18 @@
 	if(!function_exists ('wd_print_header_top')){
 		function wd_print_header_top(){ 
 			global $wd_data;
+			$header_layout = 'v1';
+			if( isset($wd_data['wd_header_layout']) ){
+				$header_layout = $wd_data['wd_header_layout'];
+			}
 		?>
 			<div class="header-top" id="header-top">
 				<div class="header-top-content container">
+					<?php 
+					if( $header_layout == 'v2' || $header_layout == 'v3' ){
+						theme_logo(); 
+					}
+					?>
 					<div class="nav wd_mega_menu_wrapper">
 						<?php 
 							if ( has_nav_menu( 'primary' )) {
@@ -15,11 +24,15 @@
 							}
 						?>
 					</div>
+					
+					<?php if( $header_layout == 'v1' ): ?>
 					<div class="header_woo_content visible-sticky">
 						<div class="shopping-cart shopping-cart-wrapper">
 							<?php echo wd_tini_cart();?>
 						</div>
 					</div>
+					<?php endif; ?>
+					
 					<div class="wd_mobile_menu_wrapper hidden-sticky">
 						<span class="menu-icon"></span>
 					</div>
@@ -47,6 +60,11 @@
 	add_action( 'wd_header_init', 'wd_print_header_body', 20 );
 	if(!function_exists ('wd_print_header_body')){
 		function wd_print_header_body(){
+			global $wd_data;
+			$header_layout = 'v1';
+			if( isset($wd_data['wd_header_layout']) ){
+				$header_layout = $wd_data['wd_header_layout'];
+			}
 	?>	
 			<div class="header-middle">
 				<div class="wd_mobile_menu_content">
@@ -58,37 +76,41 @@
 					}
 					?>
 				</div>
-				<div class="header-middle-content container">
-					<?php theme_logo();?>
-					<div class="header_woo_content">
-						
-						<div class="shopping-cart shopping-cart-wrapper visible-phone">
-							<?php echo wd_tini_cart();?>
-						</div>
-						<div class="phone_quick_menu_1 visible-xs">
-							<div class="mobile_my_account">
-								<?php if ( is_user_logged_in() ) { ?>
-									<a class="bold-upper-small" href="<?php echo get_permalink( get_option('woocommerce_myaccount_page_id') ); ?>" title="<?php _e('My Account','wpdance'); ?>"><?php _e('My Account','wpdance'); ?></a>
-								<?php }
-								else { ?>
-									<a class="bold-upper-small" href="<?php echo get_permalink( get_option('woocommerce_myaccount_page_id') ); ?>" title="<?php _e('Login / Register','wpdance'); ?>"><?php _e('Login / Register','wpdance'); ?></a>
-								<?php } ?>
+				<div class="header-middle-content container <?php echo ($header_layout != 'v1')?'visible-xs':'' ?>">
+					<?php theme_logo(); ?>
+					
+						<div class="header_woo_content">
+							<?php if( $header_layout == 'v1' ): ?>
+							<div class="shopping-cart shopping-cart-wrapper visible-phone">
+								<?php echo wd_tini_cart();?>
 							</div>
-						</div>
-						<div class="mobile_cart_container visible-xs">
-							<div class="mobile_cart">
-							<?php
-								global $woocommerce;
-								if( isset($woocommerce) && isset($woocommerce->cart) ){
-									$cart_url = $woocommerce->cart->get_cart_url();
-									echo "<a class='bold-upper-small' href='{$cart_url}' title='View Cart'>".__('View Cart','wpdance')."</a>";
-								}
+							<?php endif; ?>
+							<div class="phone_quick_menu_1 visible-xs">
+								<div class="mobile_my_account">
+									<?php if ( is_user_logged_in() ) { ?>
+										<a class="bold-upper-small" href="<?php echo get_permalink( get_option('woocommerce_myaccount_page_id') ); ?>" title="<?php _e('My Account','wpdance'); ?>"><?php _e('My Account','wpdance'); ?></a>
+									<?php }
+									else { ?>
+										<a class="bold-upper-small" href="<?php echo get_permalink( get_option('woocommerce_myaccount_page_id') ); ?>" title="<?php _e('Login / Register','wpdance'); ?>"><?php _e('Login / Register','wpdance'); ?></a>
+									<?php } ?>
+								</div>
+							</div>
+							<?php if( $header_layout == 'v1' ): ?>
+							<div class="mobile_cart_container visible-xs">
+								<div class="mobile_cart">
+								<?php
+									global $woocommerce;
+									if( isset($woocommerce) && isset($woocommerce->cart) ){
+										$cart_url = $woocommerce->cart->get_cart_url();
+										echo "<a class='bold-upper-small' href='{$cart_url}' title='View Cart'>".__('View Cart','wpdance')."</a>";
+									}
 
-							?>
+								?>
+								</div>
+								<div class="mobile_cart_number">0</div>
 							</div>
-							<div class="mobile_cart_number">0</div>
+							<?php endif; ?>
 						</div>
-					</div>
 					
 					<div class="clear"></div>
 				</div>
@@ -102,6 +124,9 @@
 	if(!function_exists ('wd_print_header_footer')){
 		function wd_print_header_footer(){
 		global $page_datas, $wd_data;
+		if( isset($wd_data['wd_header_layout']) && $wd_data['wd_header_layout'] == 'v2' ){
+			return;
+		}
 	?>	
 			<div class="header-bottom" id="header-bottom">
 				<div class="header-bottom-content container">

@@ -84,6 +84,8 @@
 					/* SHORTCODE TAB */
 					.container .wpb_content_element .wpb_tour_tabs_wrapper .wpb_tabs_nav a,
 					.vc_tta.vc_general .vc_tta-tabs-list .vc_tta-tab > a,
+					/* SHORTCODE ACCORDION */
+					.vc_tta.vc_tta-accordion.vc_general .vc_tta-panel-title a,
 					/* PORTFOLIO */
 					#portfolio-galleries .portfolio-filter li a,
 
@@ -293,7 +295,7 @@
 					body .ec_product_type6 .ec_product_meta_type6 .ec_product_addtocart a,
 					body .ec_product_widget_pricing > .ec_product_sale_price, 
 					body .ec_product_widget_pricing > .ec_product_price,
-					body .ec_product_widget_pricing > .ec_product_old_price
+					body .ec_product_widget_pricing > .ec_product_old_price,
 				</selector_normal>
 				<selector_important>
 					/* Easy cart */
@@ -350,10 +352,18 @@
 				.h3,
 				h3,
 				h3 > a.post-title,
+				.third-font,
 				.login_wrapper .ec_cart_header,
 				.register_wrapper .ec_cart_header,
 				.font-third,
-				body .ec_cart_page .ec_cart_success_title
+				body .ec_cart_page .ec_cart_success_title,
+				.wd_shortcode_feature.horizontal .feature_title a,
+				.wd_milestone .subject,
+				.heading-title-block.style-widget *,
+				.vc_wp_categories ul li a,
+				.vc_wp_meta ul li a,
+				.vc_wp_recentcomments .widget_recent_comments ul li,
+				.vc_wp_pages .widget_pages ul li
 			</selector_normal>
 			<selector_important>
 				.ec_account_login .ec_cart_header

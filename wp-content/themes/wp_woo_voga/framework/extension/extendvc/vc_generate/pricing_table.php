@@ -15,7 +15,7 @@ $ptable_params = array(
 			"class" => "",
 			"heading" => __("Title", "wpdance"),
 			"param_name" => "title",
-			"value" => "Standard",
+			"value" => "",
 			"description" => ""
 		),
 		array(

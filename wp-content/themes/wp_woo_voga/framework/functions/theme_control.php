@@ -16,7 +16,7 @@ function my_page_template_redirect(){
 		$page_datas = unserialize(get_post_meta($post->ID,THEME_SLUG.'page_configuration',true));
 		$page_datas = wd_array_atts(array(	
 											"page_layout" 					=> '0'
-											,"header_layout"				=> 'wide'
+											,"header_layout"				=> ''
 											,"page_column" 					=> '0-1-0'
 											,"left_sidebar" 				=> 'primary-widget-area'
 											,"right_sidebar" 				=> 'primary-widget-area'
@@ -27,8 +27,17 @@ function my_page_template_redirect(){
 											,"hide_breadcrumb" 				=> 0		
 											,"hide_title" 					=> 0										
 											,"hide_top_content_widget_area" => 1										
+											,"page_logo" 					=> ''										
 										),$page_datas);		
 		$wd_data['wd_layout_style'] = strcmp($page_datas['page_layout'],'0') == 0 ? (isset($wd_data['wd_layout_styles']) ? $wd_data['wd_layout_styles'] : 'wide' ) : $page_datas['page_layout'] ;
+		
+		if( !empty($page_datas['header_layout']) ){
+			$wd_data['wd_header_layout'] = $page_datas['header_layout'];
+		}
+		
+		if( !empty($page_datas['page_logo']) ){
+			$wd_data['wd_logo'] = $page_datas['page_logo'];
+		}
 		
 		/* Easycart - demo layout */
 		if( class_exists('ec_cart') ){
@@ -135,8 +144,10 @@ function my_page_template_redirect(){
 			remove_action( 'woocommerce_external_add_to_cart', 'woocommerce_external_add_to_cart', 30 );
 		}
 
-		if( !$wd_data['wd_prod_price'] )	
+		if( !$wd_data['wd_prod_price'] ){	
 			remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_price',25 );
+			remove_action( 'woocommerce_single_variation', 'woocommerce_single_variation', 10);
+		}
 		if( !$wd_data['wd_prod_shortdesc'] )	
 			remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_excerpt', 10 );
 		if( !$wd_data['wd_prod_meta'] )	{

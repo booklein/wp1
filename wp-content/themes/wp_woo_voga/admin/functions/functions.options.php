@@ -287,6 +287,17 @@ $of_options[] = array( 	"name" 		=> "Header"
 						,"type" 	=> "heading"
 						,"icon"		=> ADMIN_IMAGES . "icon-slider.png"
 				);	
+				
+$of_options[] = array( 	"name" 		=> "Header Layout"
+						,"id" 		=> "wd_header_layout"
+						,"std" 		=> "v1"
+						,"type" 	=> "images"
+						,"options" 	=> array(
+							'v1' 	=> ADMIN_IMAGES . 'header/header_v1.jpg'
+							,'v2' 	=> ADMIN_IMAGES . 'header/header_v2.jpg'
+							,'v3' 	=> ADMIN_IMAGES . 'header/header_v3.jpg'
+						)
+				);
 
 $of_options[] = array( 	"name" 		=> "Enable WooCommerce Header"
 						,"desc" 	=> "Display WooCommerce Currency Convertor, WooCommerce Shopping Cart instead of Easycart"

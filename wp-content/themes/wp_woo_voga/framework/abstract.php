@@ -402,7 +402,7 @@ class WdTheme
 				$vc_generates = array('params','feature_product_slider','recent_product_slider','recent_product','best_selling_product_slider','best_selling_product'
 				,'top_rated_product','top_rated_product_slider','heading','banner','testimonial','portfolio','recent_blogs','recent_blogs_slider'
 				,'button','code','feature','feature-slider','feature_wpdance','slide','quote','team_member','feedbuner','countdown','pricing_table'
-				,'sale_product','sale_product_slider');		
+				,'sale_product','sale_product_slider','milestone','video');		
 				foreach($vc_generates as $vc_generate){
 					if(file_exists(THEME_EXTENSION."/extendvc/vc_generate/{$vc_generate}.php"))
 						require_once THEME_EXTENSION. "/extendvc/vc_generate/{$vc_generate}.php";
@@ -483,9 +483,9 @@ class WdTheme
 			array(
 				'name'     				=> 'WooCommerce', // The plugin name
 				'slug'     				=> 'woocommerce', // The plugin slug (typically the folder name)
-				'source'   				=> 'https://downloads.wordpress.org/plugin/woocommerce.2.3.13.zip', // The plugin source
+				'source'   				=> 'https://downloads.wordpress.org/plugin/woocommerce.2.4.3.zip', // The plugin source
 				'required' 				=> true, // If false, the plugin is only 'recommended' instead of required
-				'version' 				=> '2.3.13', // E.g. 1.0.0. If set, the active plugin must be this version or higher, otherwise a notice is presented
+				'version' 				=> '2.4.3', // E.g. 1.0.0. If set, the active plugin must be this version or higher, otherwise a notice is presented
 				'force_activation' 		=> false, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch
 				'force_deactivation' 	=> false, // If true, plugin is deactivated upon theme switch, useful for theme-specific plugins
 				'external_url' 			=> '', // If set, overrides default API URL and points to an external URL
@@ -495,7 +495,7 @@ class WdTheme
 				'slug'     				=> 'js_composer', // The plugin slug (typically the folder name)
 				'source'   				=> get_stylesheet_directory() . '/framework/plugins/js_composer.zip', // The plugin source
 				'required' 				=> true, // If false, the plugin is only 'recommended' instead of required
-				'version' 				=> '4.6', // E.g. 1.0.0. If set, the active plugin must be this version or higher, otherwise a notice is presented
+				'version' 				=> '4.6.2', // E.g. 1.0.0. If set, the active plugin must be this version or higher, otherwise a notice is presented
 				'force_activation' 		=> false, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch
 				'force_deactivation' 	=> false, // If true, plugin is deactivated upon theme switch, useful for theme-specific plugins
 				'external_url' 			=> '', // If set, overrides default API URL and points to an external URL
@@ -533,9 +533,9 @@ class WdTheme
 			,array(
 				'name'     				=> 'Yith Woocommerce Compare', // The plugin name
 				'slug'     				=> 'yith-woocommerce-compare', // The plugin slug (typically the folder name)
-				'source'   				=> 'https://downloads.wordpress.org/plugin/yith-woocommerce-compare.1.2.3.zip', // The plugin source
+				'source'   				=> 'https://downloads.wordpress.org/plugin/yith-woocommerce-compare.2.0.2.zip', // The plugin source
 				'required' 				=> false, // If false, the plugin is only 'recommended' instead of required
-				'version' 				=> '1.2.3', // E.g. 1.0.0. If set, the active plugin must be this version or higher, otherwise a notice is presented
+				'version' 				=> '2.0.2', // E.g. 1.0.0. If set, the active plugin must be this version or higher, otherwise a notice is presented
 				'force_activation' 		=> false, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch
 				'force_deactivation' 	=> false, // If true, plugin is deactivated upon theme switch, useful for theme-specific plugins
 				'external_url' 			=> '', // If set, overrides default API URL and points to an external URL
@@ -543,9 +543,9 @@ class WdTheme
 			,array(
 				'name'     				=> 'Yith Woocommerce Wishlist', // The plugin name
 				'slug'     				=> 'yith-woocommerce-wishlist', // The plugin slug (typically the folder name)
-				'source'   				=> 'https://downloads.wordpress.org/plugin/yith-woocommerce-wishlist.2.0.8.zip', // The plugin source
+				'source'   				=> 'https://downloads.wordpress.org/plugin/yith-woocommerce-wishlist.2.0.10.zip', // The plugin source
 				'required' 				=> false, // If false, the plugin is only 'recommended' instead of required
-				'version' 				=> '2.0.8', // E.g. 1.0.0. If set, the active plugin must be this version or higher, otherwise a notice is presented
+				'version' 				=> '2.0.10', // E.g. 1.0.0. If set, the active plugin must be this version or higher, otherwise a notice is presented
 				'force_activation' 		=> false, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch
 				'force_deactivation' 	=> false, // If true, plugin is deactivated upon theme switch, useful for theme-specific plugins
 				'external_url' 			=> '', // If set, overrides default API URL and points to an external URL
@@ -553,9 +553,9 @@ class WdTheme
 			,array(
 				'name'     				=> 'Contact Form 7', // The plugin name
 				'slug'     				=> 'contact-form-7', // The plugin slug (typically the folder name)
-				'source'   				=> 'https://downloads.wordpress.org/plugin/contact-form-7.4.2.1.zip', // The plugin source
+				'source'   				=> 'https://downloads.wordpress.org/plugin/contact-form-7.4.2.2.zip', // The plugin source
 				'required' 				=> false, // If false, the plugin is only 'recommended' instead of required
-				'version' 				=> '4.2.1', // E.g. 1.0.0. If set, the active plugin must be this version or higher, otherwise a notice is presented
+				'version' 				=> '4.2.2', // E.g. 1.0.0. If set, the active plugin must be this version or higher, otherwise a notice is presented
 				'force_activation' 		=> false, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch
 				'force_deactivation' 	=> false, // If true, plugin is deactivated upon theme switch, useful for theme-specific plugins
 				'external_url' 			=> '', // If set, overrides default API URL and points to an external URL
@@ -565,7 +565,7 @@ class WdTheme
 				'slug'     				=> 'revslider', // The plugin slug (typically the folder name)
 				'source'   				=> get_stylesheet_directory() . '/framework/plugins/revslider.zip', // The plugin source
 				'required' 				=> false, // If false, the plugin is only 'recommended' instead of required
-				'version' 				=> '4.6.93', // E.g. 1.0.0. If set, the active plugin must be this version or higher, otherwise a notice is presented
+				'version' 				=> '5.0.4', // E.g. 1.0.0. If set, the active plugin must be this version or higher, otherwise a notice is presented
 				'force_activation' 		=> false, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch
 				'force_deactivation' 	=> false, // If true, plugin is deactivated upon theme switch, useful for theme-specific plugins
 				'external_url' 			=> '', // If set, overrides default API URL and points to an external URL
@@ -585,7 +585,7 @@ class WdTheme
 				'slug'     				=> 'wd_quickshop', // The plugin slug (typically the folder name)
 				'source'   				=> get_stylesheet_directory() . '/framework/plugins/wd_quickshop.zip', // The plugin source
 				'required' 				=> false, // If false, the plugin is only 'recommended' instead of required
-				'version' 				=> '1.0', // E.g. 1.0.0. If set, the active plugin must be this version or higher, otherwise a notice is presented
+				'version' 				=> '1.0.1', // E.g. 1.0.0. If set, the active plugin must be this version or higher, otherwise a notice is presented
 				'force_activation' 		=> false, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch
 				'force_deactivation' 	=> false, // If true, plugin is deactivated upon theme switch, useful for theme-specific plugins
 				'external_url' 			=> '', // If set, overrides default API URL and points to an external URL
@@ -605,7 +605,7 @@ class WdTheme
 				'slug'     				=> 'wd_shortcode', // The plugin slug (typically the folder name)
 				'source'   				=> get_stylesheet_directory() . '/framework/plugins/wd_shortcode.zip', // The plugin source
 				'required' 				=> false, // If false, the plugin is only 'recommended' instead of required
-				'version' 				=> '1.0.1', // E.g. 1.0.0. If set, the active plugin must be this version or higher, otherwise a notice is presented
+				'version' 				=> '1.0.4', // E.g. 1.0.0. If set, the active plugin must be this version or higher, otherwise a notice is presented
 				'force_activation' 		=> false, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch
 				'force_deactivation' 	=> false, // If true, plugin is deactivated upon theme switch, useful for theme-specific plugins
 				'external_url' 			=> '', // If set, overrides default API URL and points to an external URL
@@ -625,7 +625,7 @@ class WdTheme
 				'slug'     				=> 'wd_portfolio', // The plugin slug (typically the folder name)
 				'source'   				=> get_stylesheet_directory() . '/framework/plugins/wd_portfolio.zip', // The plugin source
 				'required' 				=> false, // If false, the plugin is only 'recommended' instead of required
-				'version' 				=> '1.0', // E.g. 1.0.0. If set, the active plugin must be this version or higher, otherwise a notice is presented
+				'version' 				=> '1.0.1', // E.g. 1.0.0. If set, the active plugin must be this version or higher, otherwise a notice is presented
 				'force_activation' 		=> false, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch
 				'force_deactivation' 	=> false, // If true, plugin is deactivated upon theme switch, useful for theme-specific plugins
 				'external_url' 			=> '', // If set, overrides default API URL and points to an external URL

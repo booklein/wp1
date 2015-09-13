@@ -140,6 +140,8 @@ class CustomFields extends AdminTheme
 		if ( isset($_POST['_page_config']) && (int)$_POST['_page_config'] == 1 && wp_verify_nonce($_POST['nonce_page_config'],'_update_page_config') ){
 			$_post_params = array(
 										"page_layout" 					=> $_POST['page_layout']
+										,"header_layout" 				=> isset($_POST['header_layout'])?$_POST['header_layout']:''
+										,"page_logo" 					=> isset($_POST['page_logo'])?$_POST['page_logo']:''
 										,"page_column" 					=> $_POST['page_column']
 										,"left_sidebar" 				=> $_POST['left_sidebar']
 										,"right_sidebar" 				=> $_POST['right_sidebar']
@@ -153,6 +155,8 @@ class CustomFields extends AdminTheme
 									
 			$_post_params = wd_array_atts(array(
 										"page_layout" 						=> '0'
+										,"header_layout"					=> ''
+										,"page_logo"						=> ''
 										,"page_column"						=> '0-1-0'
 										,"left_sidebar" 					=>'primary-widget-area'
 										,"right_sidebar" 					=> 'primary-widget-area'

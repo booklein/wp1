@@ -1084,3 +1084,8 @@ html .colorpicker .colorpicker-saturation {
 	color: #fff;
 	font-size: 50px;
 }
+
+/* RESET SELECT BOX FONTAWESOME */
+select option.icon-no-border,select option.icon-border,select option.icon-circle-border {font-family:"Open Sans",sans-serif}
+
+

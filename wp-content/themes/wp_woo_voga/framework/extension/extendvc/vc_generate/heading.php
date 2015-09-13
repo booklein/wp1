@@ -30,6 +30,27 @@ $heading_params = array(
 			"description" => "",
 		),
 		array(
+			"type" => "dropdown",
+			"class" => "",
+			"heading" => __("Style", "wpdance"),
+			"admin_label" => true,
+			"param_name" => "style",
+			"value" => array(
+				"Default" => "style-default",
+				"Widget" => "style-widget"
+			),
+			"description" => ""
+		),
+		array(
+			"type" => "colorpicker",
+			"class" => "",
+			"heading" => __("Border color", "wpdance"),
+			"admin_label" => true,
+			"param_name" => "border_color",
+			"value" => "",
+			"description" => ""
+		),
+		array(
 			"type" => "textarea_html",
 			"holder" => "div",
 			"class" => "",

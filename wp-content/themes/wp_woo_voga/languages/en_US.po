@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Voga v1.0\n"
+"Project-Id-Version: Voga v1.0.6\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2015-06-22 07:09:29+0000\n"
+"PO-Revision-Date: 2015-08-13 08:37:54+0000\n"
 "Last-Translator: admin <duy.nguyen@dev.codespot.vn>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -20,22 +20,22 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 "X-Textdomain-Support: yes"
 
-#: 404.php:25
+#: 404.php:12
 #@ wpdance
 msgid "You may have stumbled here by accident or the post you are looking for is no longer here."
 msgstr ""
 
-#: 404.php:26
+#: 404.php:13
 #@ wpdance
 msgid "Please try one of the following:"
 msgstr ""
 
-#: 404.php:29
+#: 404.php:16
 #@ wpdance
 msgid "Return to the Usability."
 msgstr ""
 
-#: 404.php:30
+#: 404.php:17
 #@ wpdance
 msgid "Use the navigation menu at the top of the page"
 msgstr ""
@@ -56,23 +56,23 @@ msgstr ""
 msgid "Options Reset"
 msgstr ""
 
-#: admin/functions/functions.options.php:880
+#: admin/functions/functions.options.php:891
 #@ wpdance
 msgid "YOU MAY ALSO LIKE"
 msgstr ""
 
-#: admin/functions/functions.options.php:896
+#: admin/functions/functions.options.php:907
 #@ wpdance
 msgid "Share this"
 msgstr ""
 
-#: admin/functions/functions.options.php:1244
+#: admin/functions/functions.options.php:1255
 #: single-portfolio.php:149
 #@ wpdance
 msgid "Related Posts"
 msgstr ""
 
-#: admin/functions/functions.options.php:1270
+#: admin/functions/functions.options.php:1281
 #@ wpdance
 msgid "Comment(s)"
 msgstr ""
@@ -1095,8 +1095,7 @@ msgid "Edit %s's Profile"
 msgstr ""
 
 #: bbpress/user-details.php:65
-#: content-video.php:27
-#: content.php:63
+#: content.php:44
 #: single-portfolio.php:58
 #: single.php:40
 #: woocommerce/myaccount/my-address.php:68
@@ -1226,39 +1225,12 @@ msgid "Comments are closed."
 msgstr ""
 
 #: content-page.php:6
-#: content-video.php:35
 #: page-templates/contact-template.php:22
 #@ wpdance
 msgid "Pages:"
 msgstr ""
 
-#: content-video.php:6
-#@ wpdance
-msgctxt "Used between list items, there is a space after the comma."
-msgid ", "
-msgstr ""
-
-#: content-video.php:24
-#@ wpdance
-msgid "Leave a comment"
-msgstr ""
-
-#: content-video.php:24
-#@ wpdance
-msgid "1 Comment"
-msgstr ""
-
-#: content-video.php:24
-#@ wpdance
-msgid "% Comments"
-msgstr ""
-
-#: content-video.php:33
-#@ wpdance
-msgid "Continue reading <span class=\"meta-nav\">&rarr;</span>"
-msgstr ""
-
-#: framework/widgets/customrecent.php:60
+#: framework/widgets/customrecent.php:56
 #@ wpdance
 msgid " comment(s)"
 msgstr ""
@@ -1344,6 +1316,7 @@ msgstr ""
 #: framework/extension/extendvc/vc_generate/best_selling_product_slider.php:261
 #: framework/extension/extendvc/vc_generate/feature-slider.php:101
 #: framework/extension/extendvc/vc_generate/feature_product_slider.php:260
+#: framework/extension/extendvc/vc_generate/portfolio.php:106
 #: framework/extension/extendvc/vc_generate/recent_blogs_slider.php:153
 #: framework/extension/extendvc/vc_generate/recent_product_slider.php:257
 #: framework/extension/extendvc/vc_generate/sale_product_slider.php:257
@@ -1463,7 +1436,7 @@ msgid "Feature"
 msgstr ""
 
 #: framework/extension/extendvc/vc_generate/feature-slider.php:50
-#: framework/extension/extendvc/vc_generate/feature.php:68
+#: framework/extension/extendvc/vc_generate/feature.php:93
 #: framework/extension/extendvc/vc_generate/portfolio.php:73
 #: framework/extension/extendvc/vc_generate/recent_blogs.php:82
 #: framework/extension/extendvc/vc_generate/recent_blogs_slider.php:82
@@ -1479,7 +1452,7 @@ msgid "Show Thumbnail"
 msgstr ""
 
 #: framework/extension/extendvc/vc_generate/feature-slider.php:74
-#: framework/extension/extendvc/vc_generate/feature.php:80
+#: framework/extension/extendvc/vc_generate/feature.php:105
 #: framework/extension/extendvc/vc_generate/recent_blogs.php:118
 #: framework/extension/extendvc/vc_generate/recent_blogs_slider.php:118
 #@ wpdance
@@ -1526,7 +1499,7 @@ msgstr ""
 #: framework/extension/extendvc/vc_generate/testimonial.php:93
 #: framework/extension/extendvc/vc_generate/top_rated_product.php:64
 #: framework/extension/extendvc/vc_generate/top_rated_product_slider.php:85
-#: framework/widgets/customrecent.php:137
+#: framework/widgets/customrecent.php:125
 #@ wpdance
 msgid "Limit"
 msgstr ""
@@ -1543,7 +1516,7 @@ msgid "Feedburner ID"
 msgstr ""
 
 #: framework/extension/extendvc/vc_generate/feedbuner.php:25
-#: framework/extension/extendvc/vc_generate/heading.php:36
+#: framework/extension/extendvc/vc_generate/heading.php:57
 #: framework/extension/extendvc/vc_generate/pricing_table.php:100
 #: framework/extension/extendvc/vc_generate/quote.php:36
 #: framework/extension/extendvc/vc_generate/tabs.php:50
@@ -1562,15 +1535,15 @@ msgstr ""
 #: framework/extension/extendvc/vc_generate/pricing_table.php:16
 #: framework/includes/metaboxes/custom_ads_sidebar.php:35
 #: framework/widgets/custompages.php:60
-#: framework/widgets/customrecent.php:119
+#: framework/widgets/customrecent.php:112
 #: framework/widgets/recent_comments_custom.php:103
 #@ wpdance
 msgid "Title"
 msgstr ""
 
-#: framework/extension/extendvc/vc_generate/params.php:51
+#: framework/extension/extendvc/vc_generate/params.php:50
 #: framework/lib/class-tgm-plugin-activation.php:1390
-#: framework/widgets/customrecent.php:124
+#: framework/widgets/customrecent.php:117
 #@ wpdance
 #@ tgmpa
 msgid "Type"
@@ -1581,47 +1554,37 @@ msgstr ""
 msgid "Target"
 msgstr ""
 
-#: framework/extension/extendvc/vc_generate/params.php:11
+#: framework/extension/extendvc/vc_generate/params.php:16
 #@ wpdance
 msgid "Row Type"
 msgstr ""
 
-#: framework/extension/extendvc/vc_generate/params.php:22
+#: framework/extension/extendvc/vc_generate/params.php:27
 #@ wpdance
 msgid "Layout"
 msgstr ""
 
-#: framework/extension/extendvc/vc_generate/params.php:33
-#@ wpdance
-msgid "Minimum height"
-msgstr ""
-
-#: framework/extension/extendvc/vc_generate/params.php:35
-#@ wpdance
-msgid "You can use pixels (px) or percents (%)."
-msgstr ""
-
-#: framework/extension/extendvc/vc_generate/params.php:41
+#: framework/extension/extendvc/vc_generate/params.php:40
 #@ wpdance
 msgid "Hidden on Phones"
 msgstr ""
 
-#: framework/extension/extendvc/vc_generate/params.php:64
+#: framework/extension/extendvc/vc_generate/params.php:63
 #@ wpdance
 msgid "Content In Grid"
 msgstr ""
 
-#: framework/extension/extendvc/vc_generate/params.php:76
+#: framework/extension/extendvc/vc_generate/params.php:75
 #@ wpdance
 msgid "Enable parallax"
 msgstr ""
 
-#: framework/extension/extendvc/vc_generate/params.php:86
+#: framework/extension/extendvc/vc_generate/params.php:85
 #@ wpdance
 msgid "Fixed image"
 msgstr ""
 
-#: framework/extension/extendvc/vc_generate/params.php:96
+#: framework/extension/extendvc/vc_generate/params.php:95
 #@ wpdance
 msgid "Parallax speed"
 msgstr ""
@@ -1724,6 +1687,8 @@ msgstr ""
 msgid "Limit number of products"
 msgstr ""
 
+#: framework/extension/extendvc/vc_generate/feature.php:56
+#: framework/extension/extendvc/vc_generate/heading.php:35
 #: framework/extension/extendvc/vc_generate/portfolio.php:37
 #: framework/extension/extendvc/vc_generate/tabs.php:26
 #: framework/extension/extendvc/vc_generate/testimonial.php:38
@@ -1758,6 +1723,7 @@ msgid "Width"
 msgstr ""
 
 #: framework/extension/extendvc/vc_generate/team_member.php:63
+#: framework/extension/extendvc/vc_generate/video.php:60
 #@ wpdance
 msgid "Height"
 msgstr ""
@@ -1773,39 +1739,39 @@ msgstr ""
 msgid "Product"
 msgstr ""
 
-#: framework/extension/extendvc/vc_includes/vc_functions.php:1
+#: framework/extension/extendvc/vc_includes/vc_functions.php:324
 #@ wpdance
 msgid "Facebook"
 msgstr ""
 
-#: framework/extension/extendvc/vc_includes/vc_functions.php:1
+#: framework/extension/extendvc/vc_includes/vc_functions.php:325
 #@ wpdance
 msgid "Twitter"
 msgstr ""
 
-#: framework/extension/extendvc/vc_includes/vc_functions.php:1
+#: framework/extension/extendvc/vc_includes/vc_functions.php:326
 #@ wpdance
 msgid "Google+"
 msgstr ""
 
-#: framework/extension/extendvc/vc_includes/vc_functions.php:1
+#: framework/extension/extendvc/vc_includes/vc_functions.php:327
 #@ wpdance
 msgid "Pinterest"
 msgstr ""
 
-#: framework/widgets/customrecent.php:56
-#: framework/widgets/customrecent.php:72
+#: framework/widgets/customrecent.php:52
+#: framework/widgets/customrecent.php:68
 #, php-format
 #@ wpdance
 msgid "Permalink to %s"
 msgstr ""
 
-#: framework/functions/pagination.php:106
+#: framework/functions/pagination.php:111
 #@ wpdance
 msgid "Previous"
 msgstr ""
 
-#: framework/functions/pagination.php:124
+#: framework/functions/pagination.php:129
 #@ wpdance
 msgid "Next"
 msgstr ""
@@ -1916,7 +1882,7 @@ msgid "Left SideBar"
 msgstr ""
 
 #: framework/functions/custom_term.php:109
-#: framework/includes/metaboxes/page_configuration.php:105
+#: framework/includes/metaboxes/page_configuration.php:117
 #@ wpdance
 msgid "Right Sidebar"
 msgstr ""
@@ -1936,7 +1902,7 @@ msgstr ""
 msgid "Pingback:"
 msgstr ""
 
-#: framework/functions/header_function.php:71
+#: framework/functions/header_function.php:91
 #: framework/functions/woo-account.php:36
 #: framework/functions/woo-account.php:38
 #: framework/functions/woo-account.php:83
@@ -1948,30 +1914,30 @@ msgstr ""
 msgid "My Account"
 msgstr ""
 
-#: framework/functions/header_function.php:74
+#: framework/functions/header_function.php:94
 #: framework/functions/woo-account.php:40
 #: framework/functions/woo-account.php:133
 #@ wpdance
 msgid "Login / Register"
 msgstr ""
 
-#: framework/functions/header_function.php:84
+#: framework/functions/header_function.php:105
 #: woocommerce/cart/mini-cart.php:68
 #@ wpdance
 msgid "View Cart"
 msgstr ""
 
-#: framework/functions/main.php:201
+#: framework/functions/main.php:208
 #@ wpdance
 msgid "Back to Top"
 msgstr ""
 
-#: framework/functions/pagination.php:105
+#: framework/functions/pagination.php:110
 #@ wpdance
 msgid "First"
 msgstr ""
 
-#: framework/functions/pagination.php:125
+#: framework/functions/pagination.php:130
 #@ wpdance
 msgid "Last"
 msgstr ""
@@ -2165,32 +2131,32 @@ msgstr ""
 msgid "Logout"
 msgstr ""
 
-#: framework/functions/woo-cart.php:26
-#: framework/functions/woo-cart.php:129
+#: framework/functions/woo-cart.php:30
+#: framework/functions/woo-cart.php:133
 #@ wpdance
 msgid "View your shopping bag"
 msgstr ""
 
-#: framework/functions/woo-cart.php:27
-#: framework/functions/woo-cart.php:130
+#: framework/functions/woo-cart.php:31
+#: framework/functions/woo-cart.php:134
 #@ wpdance
 msgid "shopping cart"
 msgstr ""
 
-#: framework/functions/woo-cart.php:72
+#: framework/functions/woo-cart.php:76
 #: woocommerce/cart/cart.php:111
 #@ wpdance
 msgid "Remove this item"
 msgstr ""
 
-#: framework/functions/woo-cart.php:84
-#: framework/functions/woo-cart.php:169
+#: framework/functions/woo-cart.php:88
+#: framework/functions/woo-cart.php:173
 #@ wpdance
 msgid "You have no items in your shopping cart."
 msgstr ""
 
-#: framework/functions/woo-cart.php:89
-#: framework/functions/woo-cart.php:174
+#: framework/functions/woo-cart.php:93
+#: framework/functions/woo-cart.php:178
 #: woocommerce/cart/cart-totals.php:26
 #: woocommerce/cart/mini-cart.php:63
 #: woocommerce/checkout/review-order.php:48
@@ -2198,14 +2164,14 @@ msgstr ""
 msgid "Subtotal"
 msgstr ""
 
-#: framework/functions/woo-cart.php:94
-#: framework/functions/woo-cart.php:177
+#: framework/functions/woo-cart.php:98
+#: framework/functions/woo-cart.php:181
 #@ wpdance
 msgid "checkout"
 msgstr ""
 
-#: framework/functions/woo-cart.php:95
-#: framework/functions/woo-cart.php:178
+#: framework/functions/woo-cart.php:99
+#: framework/functions/woo-cart.php:182
 #@ wpdance
 msgid "go to cart"
 msgstr ""
@@ -2257,7 +2223,6 @@ msgstr ""
 
 #: framework/functions/woo-hook.php:613
 #: woocommerce/single-product/add-to-cart/simple.php:43
-#: woocommerce/single-product/add-to-cart/variable.php:78
 #@ wpdance
 msgid "Add to cart"
 msgstr ""
@@ -2316,42 +2281,42 @@ msgstr ""
 msgid "Add"
 msgstr ""
 
-#: framework/includes/metaboxes/page_configuration.php:26
+#: framework/includes/metaboxes/page_configuration.php:28
 #@ wpdance
 msgid "Layout Style"
 msgstr ""
 
-#: framework/includes/metaboxes/page_configuration.php:51
+#: framework/includes/metaboxes/page_configuration.php:63
 #@ wpdance
 msgid "Page Layout"
 msgstr ""
 
-#: framework/includes/metaboxes/page_configuration.php:62
+#: framework/includes/metaboxes/page_configuration.php:74
 #@ wpdance
 msgid "Hide Breadcrumb"
 msgstr ""
 
-#: framework/includes/metaboxes/page_configuration.php:71
+#: framework/includes/metaboxes/page_configuration.php:83
 #@ wpdance
 msgid "Hide Page Title"
 msgstr ""
 
-#: framework/includes/metaboxes/page_configuration.php:91
+#: framework/includes/metaboxes/page_configuration.php:103
 #@ wpdance
 msgid "Left Sidebar"
 msgstr ""
 
-#: framework/includes/metaboxes/page_configuration.php:120
+#: framework/includes/metaboxes/page_configuration.php:132
 #@ wpdance
 msgid "Page Slider"
 msgstr ""
 
-#: framework/includes/metaboxes/page_configuration.php:135
+#: framework/includes/metaboxes/page_configuration.php:147
 #@ wpdance
 msgid "Revolution Slider"
 msgstr ""
 
-#: framework/includes/metaboxes/page_configuration.php:154
+#: framework/includes/metaboxes/page_configuration.php:166
 #@ wpdance
 msgid "LayerSlider"
 msgstr ""
@@ -2419,15 +2384,10 @@ msgstr ""
 msgid "Page ID"
 msgstr ""
 
-#: framework/widgets/customrecent.php:27
+#: framework/widgets/customrecent.php:17
 #: framework/widgets/multitab.php:18
 #@ wpdance
 msgid "Recent"
-msgstr ""
-
-#: framework/widgets/customrecent.php:132
-#@ wpdance
-msgid "Title Link"
 msgstr ""
 
 #: framework/widgets/emads.php:10
@@ -2533,7 +2493,7 @@ msgid "Get updates"
 msgstr ""
 
 #: framework/widgets/ew_social.php:64
-#: framework/widgets/ew_subscriptions.php:84
+#: framework/widgets/ew_subscriptions.php:83
 #@ wpdance
 msgid "Enter your title"
 msgstr ""
@@ -2573,17 +2533,17 @@ msgstr ""
 msgid "WD - Feedburner Subscriptions"
 msgstr ""
 
-#: framework/widgets/ew_subscriptions.php:87
+#: framework/widgets/ew_subscriptions.php:86
 #@ wpdance
 msgid "Enter your Intro Text"
 msgstr ""
 
-#: framework/widgets/ew_subscriptions.php:89
+#: framework/widgets/ew_subscriptions.php:88
 #@ wpdance
 msgid "Enter your Button"
 msgstr ""
 
-#: framework/widgets/ew_subscriptions.php:91
+#: framework/widgets/ew_subscriptions.php:90
 #@ wpdance
 msgid "Enter your Feedburner ID"
 msgstr ""
@@ -2654,7 +2614,7 @@ msgid "WD - Product A to Z"
 msgstr ""
 
 #: framework/widgets/productaz.php:77
-#: framework/widgets/twitterupdate.php:158
+#: framework/widgets/twitterupdate.php:157
 #@ wpdance
 msgid "Title:"
 msgstr ""
@@ -2699,12 +2659,12 @@ msgstr ""
 msgid "Twitter Update"
 msgstr ""
 
-#: framework/widgets/twitterupdate.php:160
+#: framework/widgets/twitterupdate.php:159
 #@ wpdance
 msgid "Username twitter:"
 msgstr ""
 
-#: framework/widgets/twitterupdate.php:162
+#: framework/widgets/twitterupdate.php:161
 #@ wpdance
 msgid "Limit:"
 msgstr ""
@@ -2849,12 +2809,12 @@ msgstr ""
 msgid "Postcode / Zip"
 msgstr ""
 
-#: woocommerce/checkout/cart-errors.php:16
+#: woocommerce/checkout/cart-errors.php:18
 #@ wpdance
 msgid "There are some issues with the items in your cart (shown above). Please go back to the cart page and resolve these issues before checking out."
 msgstr ""
 
-#: woocommerce/checkout/cart-errors.php:20
+#: woocommerce/checkout/cart-errors.php:22
 #@ wpdance
 msgid "Return To Cart"
 msgstr ""
@@ -2863,7 +2823,7 @@ msgstr ""
 #: woocommerce/myaccount/form-edit-address.php:14
 #: woocommerce/myaccount/my-address.php:17
 #: woocommerce/myaccount/my-address.php:23
-#: woocommerce/order/order-details.php:181
+#: woocommerce/order/order-details-customer.php:49
 #@ wpdance
 msgid "Billing Address"
 msgstr ""
@@ -2934,7 +2894,7 @@ msgstr ""
 #: woocommerce/checkout/form-checkout.php:138
 #: woocommerce/myaccount/form-edit-address.php:14
 #: woocommerce/myaccount/my-address.php:18
-#: woocommerce/order/order-details.php:196
+#: woocommerce/order/order-details-customer.php:60
 #@ wpdance
 msgid "Shipping Address"
 msgstr ""
@@ -3210,29 +3170,18 @@ msgstr ""
 msgid "Order Details"
 msgstr ""
 
-#: woocommerce/order/order-details.php:130
-#, php-format
-#@ wpdance
-msgid "Download file%s"
-msgstr ""
-
-#: woocommerce/order/order-details.php:160
-#@ wpdance
-msgid "Customer details"
-msgstr ""
-
-#: woocommerce/order/order-details.php:164
+#: woocommerce/order/order-details-customer.php:26
 #@ wpdance
 msgid "Email:"
 msgstr ""
 
-#: woocommerce/order/order-details.php:165
+#: woocommerce/order/order-details-customer.php:33
 #@ wpdance
 msgid "Telephone:"
 msgstr ""
 
-#: woocommerce/order/order-details.php:185
-#: woocommerce/order/order-details.php:200
+#: woocommerce/order/order-details-customer.php:52
+#: woocommerce/order/order-details-customer.php:63
 #@ wpdance
 msgid "N/A"
 msgstr ""
@@ -3258,17 +3207,12 @@ msgstr ""
 msgid " ago"
 msgstr ""
 
-#: woocommerce/single-product/add-to-cart/variable.php:28
-#@ wpdance
-msgid "Choose an option"
-msgstr ""
-
-#: woocommerce/single-product/add-to-cart/variable.php:62
+#: woocommerce/single-product/add-to-cart/variable.php:36
 #@ wpdance
 msgid "Clear selection"
 msgstr ""
 
-#: woocommerce/single-product/add-to-cart/variable.php:90
+#: woocommerce/single-product/add-to-cart/variable.php:25
 #@ wpdance
 msgid "This product is currently out of stock and unavailable."
 msgstr ""
@@ -3422,7 +3366,7 @@ msgstr ""
 msgid "Only logged in customers who have purchased this product may leave a review."
 msgstr ""
 
-#: content.php:100
+#: content.php:81
 #@ wpdance
 msgid "Read"
 msgstr ""
@@ -3589,7 +3533,7 @@ msgstr ""
 msgid "Select Slider ID"
 msgstr ""
 
-#: framework/functions/header_function.php:235
+#: framework/functions/header_function.php:260
 #@ wpdance
 msgid "Reset"
 msgstr ""
@@ -3650,7 +3594,7 @@ msgstr[1] ""
 msgid "Write review"
 msgstr ""
 
-#: framework/widgets/ew_subscriptions.php:36
+#: framework/widgets/ew_subscriptions.php:35
 #@ wpdance
 msgid "Put your email address here..."
 msgstr ""
@@ -3700,32 +3644,32 @@ msgstr ""
 msgid "Print"
 msgstr ""
 
-#: 404.php:19
+#: 404.php:6
 #@ wpdance
 msgid "Page not found"
 msgstr ""
 
-#: 404.php:28
+#: 404.php:15
 #@ wpdance
 msgid "Hit the \"Back\" button on your browser."
 msgstr ""
 
-#: 404.php:34
+#: 404.php:21
 #@ wpdance
 msgid "Or try to search something else"
 msgstr ""
 
-#: admin/functions/functions.options.php:864
+#: admin/functions/functions.options.php:875
 #@ wpdance
 msgid "Related products"
 msgstr ""
 
-#: content.php:90
+#: content.php:71
 #@ wpdance
 msgid "&nbsp; &nbsp; &nbsp; "
 msgstr ""
 
-#: content.php:94
+#: content.php:75
 #: single.php:118
 #, php-format
 #@ wpdance
@@ -3753,6 +3697,7 @@ msgid "Color text"
 msgstr ""
 
 #: framework/extension/extendvc/vc_generate/banner.php:67
+#: framework/extension/extendvc/vc_generate/video.php:90
 #@ wpdance
 msgid "Background image"
 msgstr ""
@@ -3787,6 +3732,7 @@ msgstr ""
 #: framework/extension/extendvc/vc_generate/recent_product_slider.php:275
 #: framework/extension/extendvc/vc_generate/sale_product_slider.php:275
 #: framework/extension/extendvc/vc_generate/top_rated_product_slider.php:275
+#: framework/extension/extendvc/vc_generate/video.php:99
 #@ wpdance
 msgid "Auto play"
 msgstr ""
@@ -3806,7 +3752,7 @@ msgstr ""
 msgid "Ex:fa fa-home (use font Awesome icon)"
 msgstr ""
 
-#: framework/extension/extendvc/vc_generate/feature.php:56
+#: framework/extension/extendvc/vc_generate/feature.php:81
 #@ wpdance
 msgid "Show Icon"
 msgstr ""
@@ -3903,12 +3849,12 @@ msgstr ""
 msgid "Show pagination buttons"
 msgstr ""
 
-#: framework/extension/extendvc/vc_includes/vc_functions.php:1
+#: framework/extension/extendvc/vc_includes/vc_functions.php:294
 #@ wpdance
 msgid "Personal blog / website"
 msgstr ""
 
-#: framework/extension/extendvc/vc_includes/vc_functions.php:1
+#: framework/extension/extendvc/vc_includes/vc_functions.php:295
 #@ wpdance
 msgid "E-mail"
 msgstr ""
@@ -4056,7 +4002,7 @@ msgstr ""
 msgid "Availability:"
 msgstr ""
 
-#: framework/includes/metaboxes/page_configuration.php:80
+#: framework/includes/metaboxes/page_configuration.php:92
 #@ wpdance
 msgid "Hide Top Content Widget Area"
 msgstr ""
@@ -4255,19 +4201,7 @@ msgstr ""
 msgid "Track order"
 msgstr ""
 
-#: woocommerce/order/order-details.php:61
-#: woocommerce/order/order-details.php:65
-#, php-format
-#@ wpdance
-msgid "(Includes %s)"
-msgstr ""
-
-#: woocommerce/order/order-details.php:83
-#@ wpdance
-msgid "Refunded:"
-msgstr ""
-
-#: woocommerce/order/order-details.php:92
+#: woocommerce/order/order-details-customer.php:19
 #@ wpdance
 msgid "Note:"
 msgstr ""
@@ -4858,11 +4792,6 @@ msgstr ""
 msgid "Installing Plugin %1$s (%2$d/%3$d)"
 msgstr ""
 
-#: content.php:110
-#@ wpdance
-msgid "Sorry. There are no posts to display"
-msgstr ""
-
 #: framework/lib/class-tgm-plugin-activation.php:1372
 #, php-format
 #@ tgmpa
@@ -4882,5 +4811,106 @@ msgstr ""
 #: woocommerce/myaccount/form-login.php:72
 #@ wpdance
 msgid "Please enter your email address and password to register, or <a id=\"wd_register\" title=\"login\" href=\"#\"> click here</a> to login."
+msgstr ""
+
+#: content-none.php:1
+#@ wpdance
+msgid "There are no posts to display"
+msgstr ""
+
+#: framework/extension/extendvc/vc_generate/feature.php:68
+#@ wpdance
+msgid "Icon Style"
+msgstr ""
+
+#: framework/extension/extendvc/vc_generate/feature.php:117
+#@ wpdance
+msgid "Icon color"
+msgstr ""
+
+#: framework/extension/extendvc/vc_generate/feature.php:126
+#@ wpdance
+msgid "Icon hover color"
+msgstr ""
+
+#: framework/extension/extendvc/vc_generate/feature.php:135
+#: framework/extension/extendvc/vc_generate/heading.php:47
+#@ wpdance
+msgid "Border color"
+msgstr ""
+
+#: framework/extension/extendvc/vc_generate/feature.php:144
+#@ wpdance
+msgid "Border hover color"
+msgstr ""
+
+#: framework/extension/extendvc/vc_generate/milestone.php:24
+#@ wpdance
+msgid "Number"
+msgstr ""
+
+#: framework/extension/extendvc/vc_generate/milestone.php:33
+#@ wpdance
+msgid "Symbol"
+msgstr ""
+
+#: framework/extension/extendvc/vc_generate/milestone.php:42
+#@ wpdance
+msgid "Subject"
+msgstr ""
+
+#: framework/extension/extendvc/vc_generate/portfolio.php:118
+#@ wpdance
+msgid "Category IDs"
+msgstr ""
+
+#: framework/extension/extendvc/vc_generate/video.php:24
+#@ wpdance
+msgid "MP4 Video"
+msgstr ""
+
+#: framework/extension/extendvc/vc_generate/video.php:33
+#@ wpdance
+msgid "OGG Video"
+msgstr ""
+
+#: framework/extension/extendvc/vc_generate/video.php:42
+#@ wpdance
+msgid "WEBM Video"
+msgstr ""
+
+#: framework/extension/extendvc/vc_generate/video.php:51
+#@ wpdance
+msgid "Volumn"
+msgstr ""
+
+#: framework/extension/extendvc/vc_generate/video.php:69
+#@ wpdance
+msgid "Background color opacity"
+msgstr ""
+
+#: framework/extension/extendvc/vc_generate/video.php:78
+#@ wpdance
+msgid "Background color"
+msgstr ""
+
+#: framework/extension/extendvc/vc_generate/video.php:111
+#@ wpdance
+msgid "Loop"
+msgstr ""
+
+#: framework/includes/metaboxes/page_configuration.php:52
+#@ wpdance
+msgid "Header Layout"
+msgstr ""
+
+#: framework/includes/metaboxes/page_configuration.php:193
+#@ wpdance
+msgid "Page Logo"
+msgstr ""
+
+#: woocommerce/order/order-details-customer.php:14
+#@ wpdance
+msgid "Customer Details"
 msgstr ""
 

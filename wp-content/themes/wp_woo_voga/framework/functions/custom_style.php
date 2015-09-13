@@ -240,6 +240,6 @@
 	}
 
 	if( USING_CSS_CACHE == true ){
-		add_action('wp_enqueue_scripts','include_cache_css',10000000000000);
+		add_action('wp_enqueue_scripts','include_cache_css',999999999);
 	}	
 ?>

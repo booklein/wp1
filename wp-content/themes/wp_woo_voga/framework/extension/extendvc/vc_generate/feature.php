@@ -53,6 +53,31 @@ if( $wd_is_feature ){
 			array(
 				"type" => "dropdown",
 				"class" => "",
+				"heading" => __("Style", "wpdance"),
+				"admin_label" => true,
+				"param_name" => "style",
+				"value" => array(
+						'Vertical' => 'vertical',
+						'Horizontal' => 'horizontal'
+					),
+				"description" => ""
+			),
+			array(
+				"type" => "dropdown",
+				"class" => "",
+				"heading" => __("Icon Style", "wpdance"),
+				"admin_label" => true,
+				"param_name" => "icon_style",
+				"value" => array(
+						'No Border' => 'icon-no-border',
+						'Square Border' => 'icon-square-border',
+						'Circle Border' => 'icon-circle-border'
+					),
+				"description" => ""
+			),
+			array(
+				"type" => "dropdown",
+				"class" => "",
 				"heading" => __("Show Icon", "wpdance"),
 				"admin_label" => true,
 				"param_name" => "show_icon",
@@ -86,7 +111,42 @@ if( $wd_is_feature ){
 					),
 				"description" => ""
 			),
-			
+			array(
+				"type" => "colorpicker",
+				"class" => "",
+				"heading" => __("Icon color", "wpdance"),
+				"admin_label" => false,
+				"param_name" => "icon_color",
+				"value" => "",
+				"description" => ""
+			),
+			array(
+				"type" => "colorpicker",
+				"class" => "",
+				"heading" => __("Icon hover color", "wpdance"),
+				"admin_label" => false,
+				"param_name" => "icon_hover_color",
+				"value" => "",
+				"description" => ""
+			),
+			array(
+				"type" => "colorpicker",
+				"class" => "",
+				"heading" => __("Border color", "wpdance"),
+				"admin_label" => false,
+				"param_name" => "border_color",
+				"value" => "",
+				"description" => ""
+			),
+			array(
+				"type" => "colorpicker",
+				"class" => "",
+				"heading" => __("Border hover color", "wpdance"),
+				"admin_label" => false,
+				"param_name" => "border_hover_color",
+				"value" => "",
+				"description" => ""
+			),
 		)
 	);
 	vc_map( $feature_params );

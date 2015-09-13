@@ -320,7 +320,7 @@ function wd_add_style_yith_compare(){
 	wd_load_google_font_yith_compare('Montserrat');
 	wd_load_google_font_yith_compare('Source+Sans+Pro');
 }
-if( isset($_GET['action'],$_GET['iframe']) && $_GET['action'] == 'yith-woocompare-view-table' && $_GET['iframe'] == "true" )
+if( isset($_GET['action']) && $_GET['action'] == 'yith-woocompare-view-table' )
 	add_action('wp_head','wd_add_style_yith_compare');
 	
 function wd_load_google_font_yith_compare($wd_font_name){
@@ -728,7 +728,7 @@ if( !function_exists('wd_add_facebook_sdk') ){
 	  var js, fjs = d.getElementsByTagName(s)[0];
 	  if (d.getElementById(id)) return;
 	  js = d.createElement(s); js.id = id;
-	  js.src = "//connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v2.3";
+	  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3";
 	  fjs.parentNode.insertBefore(js, fjs);
 	}(document, 'script', 'facebook-jssdk'));</script>
 	<?php

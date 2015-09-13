@@ -3,7 +3,7 @@ function em_search_bar(){
 	var search_input = search_form.find('.search-input');
 	var text_default = search_input.attr('data-default');
 	
-	search_input.bind('click', function(){
+	search_input.bind('click focus', function(){
 		if( jQuery(this).val() === text_default ){
 			jQuery(this).val("");
 		}
@@ -15,6 +15,19 @@ function em_search_bar(){
 	});
 	
 	search_input.trigger('blur');
+}
+
+function wd_show_header_search_bar(){
+	if( jQuery(window).width() >= 1230 ){
+		jQuery('.header-v2 .header_search').hover(
+			function(){
+				jQuery(this).find('input[name="s"]').show().focus();
+			},
+			function(){
+				jQuery(this).find('input[name="s"]').hide();
+			}
+		);
+	}
 }
 // **********************************************************************// 
 // ! Full width section
@@ -495,6 +508,10 @@ jQuery(document).ready(function($) {
 		
 		em_sections();
 		em_search_bar();
+		wd_show_header_search_bar();
+		jQuery(window).bind('resize', function(){
+			wd_show_header_search_bar();
+		});
 		var windowWidth = jQuery(window).width();
 		
 		setTimeout(function () {

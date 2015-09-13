@@ -1,6 +1,6 @@
 <?php
 global $xml_arr_file;
-$xml_arr_file = array('color_default','color_red','color_sky_blue','color_pink','color_purple','color_green','color_dark_blue');
+$xml_arr_file = array('color_default','color_red','color_blue','color_pink','color_deeppink','color_gray','color_green','color_deepblue','color_darkblue');
 
 function wd_get_tab_html_content(){
 	global $wd_of_options,$xml_arr_file;

@@ -5,6 +5,7 @@
 	$datas = unserialize(get_post_meta($post->ID,THEME_SLUG.'page_configuration',true));
 	$datas = wd_array_atts(array(
 										"page_layout" 					=> '0'
+										,"header_layout"				=> ''
 										,"page_column"					=> '0-1-0'
 										,"left_sidebar" 				=>'primary-widget-area'
 										,"right_sidebar" 				=> 'primary-widget-area'
@@ -14,6 +15,7 @@
 										,"hide_breadcrumb" 				=> 0		
 										,"hide_title" 					=> 0											
 										,"hide_top_content_widget_area"	=> 1											
+										,"page_logo"					=> ''											
 								),$datas);								
 ?>
 <div class="page_config_wrapper">
@@ -45,7 +47,17 @@
 					$banner_show ="";
 				}
 			?>
-
+			<li>
+				<p>
+					<label><?php _e('Header Layout','wpdance');?> </label>
+					<select name="header_layout" id="header_layout">
+						<option value="" <?php if( strcmp($datas['header_layout'],'') == 0 ) echo "selected";?>>Inherit</option>
+						<option value="v1" <?php if( strcmp($datas['header_layout'],'v1') == 0 ) echo "selected";?>>Layout 1</option>
+						<option value="v2" <?php if( strcmp($datas['header_layout'],'v2') == 0 ) echo "selected";?>>Layout 2</option>
+						<option value="v3" <?php if( strcmp($datas['header_layout'],'v3') == 0 ) echo "selected";?>>Layout 3</option>
+					</select>
+				</p> 
+			</li>
 			<li>
 				<p>
 					<label><?php _e('Page Layout','wpdance');?> </label>
@@ -176,7 +188,17 @@
 				</p> 			
 			</li>
 			<?php endif;?>
-					
+			<li>
+				<p>
+					<label><?php _e('Page Logo','wpdance');?> </label>
+					<input type="text" name="page_logo" id="_page_logo" value="<?php echo esc_attr($datas['page_logo']) ?>" class="upload_field" />
+					<input type="button" class="button button-primary upload_button" value="Select image" />
+					<input type="button" class="button clear_button" value="Clear image" <?php echo (strlen($datas['page_logo']) == 0)?'disabled':'' ?> />
+					<?php if( strlen($datas['page_logo']) > 0 ): ?>
+					<img src="<?php echo esc_url($datas['page_logo']); ?>" class="preview_image" />
+					<?php endif; ?>
+				</p> 			
+			</li>		
 		</ul>
 	</div>
 </div>

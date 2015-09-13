@@ -168,10 +168,6 @@ class AdminTheme extends WdTheme
 		wp_register_script( 'logo_upload', THEME_INCLUDES_JS_URI.'/logo-upload.js');
 		wp_enqueue_script('logo_upload');
 		
-		if( isset($_GET['page']) && $_GET['page'] == 'revslider' ){
-			wp_dequeue_script('jquery-ui-autocomplete');
-		}
-		
 		
 	}
 }

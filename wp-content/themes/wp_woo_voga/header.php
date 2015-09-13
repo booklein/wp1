@@ -33,12 +33,16 @@ if($is_IE){
 	if($wd_data['wd_layout_style'] != '' && $wd_data['wd_layout_style'] == 'boxed'){
 		$wd_layout_style = ' wd-'.$wd_data['wd_layout_style'];
 	}
-
+	
+	$header_layout = 'v1';
+	if( isset($wd_data['wd_header_layout']) ){
+		$header_layout = $wd_data['wd_header_layout'];
+	}
 ?>
 <body <?php body_class($wd_layout_style); ?>>
 <div id="template-wrapper" class="hfeed site <?php echo esc_attr($wd_layout_style); ?>">
 	<?php if ( !is_page_template('page-templates/comming-soon.php') ) :?>
-		<header id="header">
+		<header id="header" class="header-<?php echo esc_attr($header_layout); ?>">
 			<div class="header-main">
 				<?php do_action( 'wd_header_init' ); ?>
 			</div>
